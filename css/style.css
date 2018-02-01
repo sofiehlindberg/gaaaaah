@@ -1,0 +1,138 @@
+/**
+ * file: style.css
+ * purpose: effects ...
+ **/
+
+body {
+    background-color: f9f9f9;
+}
+
+article {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.1og3h1 {
+    text-align: center;
+}
+
+p {
+    width: 50%;
+    margin-left: 25%;
+}
+
+img,
+figcaption {
+    margin-left: 17%;
+    position: relative;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 7s;
+    animation-name: example;
+    animation-duration: 7s;
+    animation-timing-function: ease-out;
+}
+
+
+/* Standard syntax */
+
+@keyframes example {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    20% {
+        left: 200px;
+        top: 0px;
+    }
+    45% {
+        left: 200px;
+        top: 200px;
+    }
+    70% {
+        left: -200px;
+        top: 200px;
+    }
+    90% {
+        left: -200px;
+        top: 0px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+/*første sektion*/
+
+#first {
+    position: relative;
+    animation-name: first;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+/* Standard syntax */
+
+@keyframes first {
+    0% {
+        left: -1000px;
+        top: 0px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+/*anden sektion*/
+
+#second {
+    position: relative;
+    animation-name: second;
+    animation-delay: 1.5s;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+/* Standard syntax */
+
+@keyframes second {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    50% {
+        left: 0px;
+        top: 100px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.bg {
+    width: 100%;
+    background-color: #f9f9f9;
+    position: relative;
+    animation-name: bg;
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+
+
+@keyframes bg {
+    0% {
+        background-color: #f9f9f9;
+    }
+    50% {
+        background-color: darkgrey;
+    }
+    100% {
+        background-color: #f9f9f9;
+    }
+}
